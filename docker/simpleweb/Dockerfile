@@ -2,6 +2,8 @@
 # nodeが使えるイメージに変更
 FROM node:alpine
 
+WORKDIR /usr/app
+
 # Install some dependencies
 # デバイス内のJSファイルをコンテナにコピー
 COPY ./ ./
